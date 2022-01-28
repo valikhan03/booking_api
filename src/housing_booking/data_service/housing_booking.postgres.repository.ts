@@ -14,10 +14,10 @@ export class HousingPostgresGenericRepository<T> implements IGenericRepository<T
 
         throw new Error("Method not implemented.");
     }
-    update(id: string, item: T): boolean {
+    update(id: string, item: T): Promise<boolean> {
         throw new Error("Method not implemented.");
     }
-    delete(id: string): boolean {
+    delete(id: string): Promise<boolean> {
         throw new Error("Method not implemented.");
     }
     

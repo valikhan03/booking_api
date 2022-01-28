@@ -13,5 +13,27 @@ export class HousingBookingService{
         }        
     }
 
-    
+    async changeHousing(id:string, housing:Housing){
+        try{
+            const res = await this.dataServices.housings.update(id, housing);
+        }catch(err){
+            throw err
+        }
+    }
+
+    async getHousingByID(id:string){
+        try{
+            const housing = await this.dataServices.housings.get(id);
+        }catch(err){
+
+        }
+    }
+
+    async getAllHousings(){
+        try{
+            const housings = await this.dataServices.housings.getAll()
+        }catch(err){
+
+        }
+    }
 }

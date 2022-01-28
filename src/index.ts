@@ -3,6 +3,7 @@ import { createConnection, ConnectionManager, getConnectionManager } from "typeo
 import * as dotenv from "dotenv";
 
 const app:express.Application = express();
+
 const conn_manager = getConnectionManager();
 
 const connection =  conn_manager.create({
