@@ -3,15 +3,15 @@ import { Entity, Column } from "typeorm";
 @Entity()
 export class Housing{
     @Column()
-    id!: string;
+    id: string;
     @Column()
-    title!: string;
+    title: string;
     @Column()
-    organisation!: string;
+    organisation: string;
     @Column()
-    location!: string;
+    location: string;
     @Column()
-    price!: number;
+    price: number;
     @Column()
-    description!: string;
+    description: string;
 };

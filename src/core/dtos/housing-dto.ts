@@ -5,20 +5,20 @@ import { Housing } from '../entities/housing';
 export class createHousingDTO{
     @IsString()
     @IsNotEmpty()
-    title!: string;
+    title: string;
     
     @IsString()
     @IsNotEmpty()
-    organisation!:string;
+    organisation:string;
 
     @IsNotEmpty()
-    location!:string;
+    location:string;
 
     @IsNotEmpty()
-    price!:number;
+    price:number;
 
     @IsNotEmpty()
-    description!:string;
+    description:string;
 }
 
 export class createHousingResponseDTO{

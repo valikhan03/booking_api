@@ -5,7 +5,7 @@ interface IUser{
 };
 
 export class User implements IUser{
-    id!: string;
-    fullname!: string;
-    password!: string;
+    id: string;
+    fullname: string;
+    password: string;
 }
